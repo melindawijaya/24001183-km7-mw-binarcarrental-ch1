@@ -4,11 +4,15 @@
     src: url('helvetica/Helvetica.ttf');/*memanggil file font eksternalnya di folder nexa*/
   }
 
-body{
+  body{
     font-family:helvetica;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
+  }
+
+  .rect-image{
+    margin-left: 62px;
   }
 
   .register-button, .mulai-sewa-button{
@@ -110,6 +114,14 @@ body{
     flex-wrap: wrap;
   }
 
+  .why-us-title{
+    margin-bottom: 16px;
+}
+
+  .why-us-content{
+      margin-bottom: 40px;
+  }
+
   .containerblue{
     background-color: #0D28A6;
     color: white;
@@ -193,6 +205,10 @@ body{
   .offcanvas-body {
     flex-grow: 1;
     overflow-y: auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 16px;
+    padding-bottom: 0;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -209,6 +225,20 @@ body{
 
   /* Media Handphone */
   @media (max-width: 425px){
+    .rect-image{
+      margin-left: 16px;
+    }
+
+    .navbar-toggler, .navbar-toggler-icon {
+      width: 24px;
+      height: 24px;
+      border: 0;
+    }
+
+    .register-button{
+      margin-top: 8px;
+    }
+
     .car-img{
       margin-top: 24px ;
     }
@@ -217,14 +247,25 @@ body{
       display: contents;
     }
     
-    .why-us-title, .why-us-content{
+    .why-us-title{
         text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .why-us-content{
+        text-align: center;
+        margin-bottom: 24px;
     }
 
     .features-title{
         font-size: 24px;
         font-weight: 700;
         line-height: 36px;
+    }
+
+    .content-features{
+      margin-top: 16px;
+      margin-bottom: 32px;
     }
 
     .carousel-control-next, .carousel-control-prev {
@@ -251,6 +292,21 @@ body{
 
     .left-button, .right-button{
       width: 75%;
+    }
+
+    #best-car{
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    #testimonial{
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    
+    #faq{
+      margin-top: 60px;
+      margin-bottom: 60px;
     }
     
   }
