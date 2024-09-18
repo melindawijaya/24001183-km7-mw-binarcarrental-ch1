@@ -28,7 +28,7 @@ body{
 }
 
   .service-img{
-    max-width: 459px;
+    max-width: 100%;
   }
 
   .box{
@@ -209,6 +209,10 @@ body{
 
   /* Media Handphone */
   @media (max-width: 425px){
+    .car-img{
+      margin-top: 24px ;
+    }
+
     .row {
       display: contents;
     }
@@ -248,9 +252,6 @@ body{
     .left-button, .right-button{
       width: 75%;
     }
-
-    
-    
     
   }
   
